@@ -3,17 +3,18 @@
 // Problems with var
 
 function count() {
-  for (var i = 0; i < 5; i++) {
-    console.log(i + " inside the forLoop");
+  for (let i = 0; i < 5; i++) {
+    console.log(i + ' inside the forLoop');
   }
-  console.log(i + " outside the forLoop");
+  // console.log(i + " outside the forLoop");
 }
 
-// count(); // <---- uncomment me!
+count(); // <---- uncomment me!
 
 // Another problem with var is that we can overwrite it, like this:
 
-var greeting = "Hello 😘";
-var greeting = "Not today, pal! 😤";
+let greeting = 'Hello 😘';
+let greeting1 ='Not today, pal! 😤'; /* had to rename the variable because of this error message: 
+                                      Cannot redeclare block-scoped variable 'greeting'*/
 
-// console.log(greeting) // <----- uncomment me!
+console.log(greeting, greeting1); // <----- uncomment me!
