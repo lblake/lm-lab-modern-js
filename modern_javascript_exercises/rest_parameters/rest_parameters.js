@@ -1,10 +1,9 @@
 // Instructions can be found in rest_parameters.md
 
-function add(a, b) {
-  // Add a loop here
-  return a + b;
+ export const add = (...args) => {
+ return args.reduce((total, current) => total + current, 0)
 }
 
 add(1, 2, 3, 4, 5);
 
-module.exports = add;
+
