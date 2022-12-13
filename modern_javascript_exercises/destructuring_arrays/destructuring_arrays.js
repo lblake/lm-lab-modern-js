@@ -2,6 +2,5 @@
 
 export const sequence = (order) => {
   const [first, second, third] = order;
-  console.log(order);
-  return first + ', ' + second + ', ' + third;
+  return `${first}, ${second}, ${third}`;
 };
